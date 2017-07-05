@@ -2,31 +2,7 @@
 
 class Validacao
 {
-    private $cpf;
-    private $email;
-    private $cnpj;
-
-    public function setCPF($cpf)
-    {
-        $this->cpf = $cpf;
-    }
-
-    public function getCPF()
-    {
-        return $this->cpf;
-    }
-
-    public function setEmail($email)
-    {
-        $this->email = $email;
-    }
-
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
-    public static function validarCPF($cpf)
+    public function validarCPF($cpf)
     {
         if(empty($cpf)) {
             return false;
