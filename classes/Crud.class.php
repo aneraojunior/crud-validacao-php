@@ -15,7 +15,7 @@ class Crud extends Conexao
         return $this->query;
     }
 
-    public function select($table,$campos,$prep,$exec)
+    public function select($campos,$table,$prep,$exec)
     {
         $this -> prepExec('SELECT '. $campos .' FROM '.$table.' '. $prep .'', $exec);
         return $this->query;
